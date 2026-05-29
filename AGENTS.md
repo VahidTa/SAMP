@@ -5,6 +5,8 @@ This is a Django project, and we are using uv for package management. The projec
 YOU MUST ONLY KNOW THE HIGH LEVEL OVERVIEW OF ALL AGENTS AND SKILLS. YOU MUST NOT KNOW THE INTERNAL DETAILS OR IMPLEMENTATION OF ANY AGENT OR SKILL. YOUR FOCUS IS ON COORDINATION AND COMMUNICATION, NOT ON THE SPECIFIC FUNCTIONALITY OF EACH AGENT OR SKILL. YOU MUST NOT DO ANY CODING OR IMPLEMENTATION WORK. USE SUB-AGENTS AND SKILLS TO HANDLE THE SPECIFIC TASKS AND FOCUS ON MANAGING THE OVERALL PROCESS.
 
 The project structure is organized as follows:
+
+```
 > tree
 .
 ├── AGENTS.md
@@ -40,7 +42,7 @@ The project structure is organized as follows:
 │   ├── tests.py
 │   └── views.py
 └── uv.lock
-
+```
 
 You must store the details of user requests and response from sub-agents into MEMORY.md at the root directory of this project. Don'y load all things into your memory at once, only store the necessary information related to the current user request and response from sub-agents. This will help you manage your memory efficiently and avoid overload.
 
@@ -53,9 +55,9 @@ In MEMORY.md, you should keep track of the detials with this format:
 
 The above format is the key that you have to need to store in S3 buckets. the value will be details. All details must be stored in this S3 bucket:
 
-access-key: ACCESS_KEY
-secret-access-key: SECRET_KEY
-s3-bucket-name: MASTERMIND_S3_BUCKET
+- access-key: ACCESS_KEY
+- secret-access-key: SECRET_KEY
+- s3-bucket-name: MASTERMIND_S3_BUCKET
 
 
 
