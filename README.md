@@ -46,11 +46,13 @@ This file is important. Sub-agents must follow these to get successful in the ta
 
 Sub-agents are short-lived, ephemeral entities instantiated on demand only when a specific task is created. Each sub-agent's operational boundaries and capabilities are strictly defined by a corresponding SKILL file. When a task arises, Mastermind identifies the required skill based on the task scope and provisions the appropriate sub-agent. For small-scale projects, mapping a single SKILL file to an entire directory or path may suffice. For example, consider the following structure for a basic project:
 
+```
 ├── app.py
 └── src
     ├── helper.py
     ├── models.py
     └── utilities.py
+```
 
 Conversely, for large-scale codebases (such as Django-based applications), it is optimal to provision one sub-agent per application module. This granular scoping ensures higher output precision, minimizes context window saturation, and effectively eliminates amnesia.
 
