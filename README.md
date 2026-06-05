@@ -1,3 +1,6 @@
+[نسخه پارسی](README_FA.md)
+
+
 # A framework for using AI Agents for projects
 
 Many companies and engineers currently misuse AI by assuming that spinning up an agent, issuing a string of sequential prompts, and receiving a block of code equates to project completion. While more pragmatic engineers utilize localized "skills" or optimization tools to minimize token consumption, these strategies are strictly limited to small-scale projects. They break down entirely at scale because Large Language Models (LLMs) cannot effectively maintain coherent state over massive context windows over time, resulting in severe context degradation and amnesia.
